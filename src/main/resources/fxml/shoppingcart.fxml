@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx/17"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="app.ShoppingCartController">
+
+    <ChoiceBox fx:id="languageChoiceBox" />
+
+    <Label fx:id="numberLabel" text="%enter.number.of.items" />
+    <TextField fx:id="numberField" />
+    <Button fx:id="generateItemsButton" text="%generate.button" onAction="#generateItemFields"/>
+
+    <VBox fx:id="itemBox" spacing="5" />
+
+    <Button fx:id="calculateButton" text="%calculate.button" onAction="#calculateTotal" />
+    <Label fx:id="totalLabel" text="%total.cost" />
+</VBox>
